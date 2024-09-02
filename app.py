@@ -7,17 +7,17 @@ Original file is located at
     https://colab.research.google.com/drive/1Eq2goiM5Koybn_MCeBx1653c14SpmCkL
 """
 
-!pip cache purge
+# !pip cache purge
 
-!pip install openAI
+# !pip install openAI
 
-!pip install LangChain
-!pip install streamlit
+# !pip install LangChain
+# !pip install streamlit
 
-!pip install LangChain==0.0.148
+# !pip install LangChain==0.0.148
 
-!pip install pydantic==1.10.6
-!pip install typing-inspect==0.8.0
+# !pip install pydantic==1.10.6
+# !pip install typing-inspect==0.8.0
 
 import streamlit as st
 from langchain import OpenAI,LLMChain
@@ -41,4 +41,4 @@ if question:
   response = llm_chain.run({"question":question})
   st.write("Response: {response}")
 
-!pip install langchain_community
+# !pip install langchain_community
